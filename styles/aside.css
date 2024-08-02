@@ -18,13 +18,13 @@ aside {
   margin-bottom: 1rem;
 }
 
-h1 {
-    font: var(--logo);
-    color: var(--pink);
-    margin-bottom: 0.25rem;
+.h1-logo {
+  font: var(--logo);
+  color: var(--pink);
+  margin-bottom: 0.25rem;
 }
 
 p {
-    font: var(--body-md);
-    color: var(--text-heading);
+  font: var(--body-md);
+  color: var(--text-heading);
 }

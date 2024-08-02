@@ -52,7 +52,7 @@
 
   --font-family-bl: "Baloo 2", sans-serif;
   --heading-md: 700 1.75rem/100% var(--font-family-bl);
-  --heading-sm: 700 1, 125rem/100% var(--font-family-bl);
+  --heading-sm: 700 1.125rem/100% var(--font-family-bl);
 
   --font-family-os: "Open Sans", sans-serif;
   --body-md: 500 1rem/100% var(--font-family-os);
