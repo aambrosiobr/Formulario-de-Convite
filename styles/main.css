@@ -1,0 +1,10 @@
+main {
+  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+  overflow: auto;
+}
+
+.main-brand {
+  height: 100vh;
+  border-radius: 0.75rem;
+  background-color: var(--shape-body);
+}

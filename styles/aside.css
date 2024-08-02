@@ -1,0 +1,30 @@
+aside {
+  padding: 1.25rem 0rem 1.25rem 1.25rem;
+}
+
+.aside-brand {
+  max-width: 25rem;
+  height: 45.5rem;
+  border-radius: 0.75rem;
+  margin-left: auto;
+  background-image: url(../assets/Background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+}
+
+.img-logo {
+  margin-bottom: 1rem;
+}
+
+h1 {
+    font: var(--logo);
+    color: var(--pink);
+    margin-bottom: 0.25rem;
+}
+
+p {
+    font: var(--body-md);
+    color: var(--text-heading);
+}

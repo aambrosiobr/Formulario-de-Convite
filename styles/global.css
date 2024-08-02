@@ -60,7 +60,3 @@
   --body-xs: 500 0, 75rem/100% var(--font-family-os);
 }
 
-body {
-  overflow: hidden;
-  background-color: var();
-}
