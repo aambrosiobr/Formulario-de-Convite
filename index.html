@@ -32,9 +32,39 @@
 
           <forms>
             <fieldset>
-              <legend>Informações Pessoais</legend>
-              <label for="nome">Nome:</label>
-              
+              <legend>Sobre o evento</legend>
+
+              <div class="input-wrapper">
+                <label for="tittle">Título</label>
+                <input
+                  type="text"
+                  id="tittle"
+                  name="tittle"
+                  placeholder="Nome do evento"
+                />
+              </div>
+
+              <div class="flex-wrapper">
+                <div class="input-wrapper">
+                  <label for="datetimeInput">Início</label>
+                  <input
+                    type="datetime-local"
+                    id="start"
+                    name="start"
+                    placeholder="DD/MM/AAAA, --:--"
+                  />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="datetimeInput">Fim</label>
+                  <input
+                    type="datetime-local"
+                    id="end"
+                    name="end"
+                    placeholder="DD/MM/AAAA, --:--"
+                  />
+                </div>
+              </div>
             </fieldset>
           </forms>
         </div>
