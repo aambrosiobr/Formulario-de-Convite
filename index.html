@@ -69,7 +69,7 @@
                 <div class="event-wrapper">
                   <label>Tipo</label>
                   <div class="selector-event">
-                    <input type="radio" id="presential" name="selector-event" value="1">
+                    <input type="radio" id="presential" name="selector-event" value="1" >
                     <label for="presential" class="option">
                       
                       <svg class="option-icon" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,8 +88,28 @@
                                               
                       Online
                     </label>
+                  </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="adress">Local</label>
+                <input
+                  type="text"
+                  id="adress"
+                  name="adress"
+                  placeholder="Link ou endereço"
+                />
               </div>
             </fieldset>
+
+            <div class="input-wrapper">
+              <label for="adress">Descrição</label>
+              <textarea 
+              name="event-details" 
+              id="event details" 
+              placeholder="Escreva sobre os detalhes do evento"></textarea>
+            </div>
+            
           </forms>
         </div>
       </main>
