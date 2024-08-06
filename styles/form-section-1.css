@@ -101,7 +101,6 @@ input:focus {
   border-radius: 5px;
   cursor: pointer;
   gap: 0.5rem;
-
 }
 
 & label.option {
@@ -147,6 +146,7 @@ textarea {
 
   font: var(--body-sm);
   color: var(--input-placeholder);
+  margin-bottom: 3rem;
 }
 
 & textarea:hover,
