@@ -31,8 +31,11 @@
           <h1>Crie seu convite</h1>
 
           <forms>
-            <fieldset class="section-1">
-              <legend>Sobre o evento</legend>
+            <fieldset class="information">
+              <legend class="section-1">
+                <img class="img-sections" src="assets/icons/calendar.svg" alt="Ícone de um calendario">
+                Sobre o evento
+              </legend>
 
               <div class="input-wrapper">
                 <label for="tittle">Título</label>
@@ -67,9 +70,9 @@
                 
                 
                 <div class="event-wrapper">
-                  <label>Tipo</label>
+                  <label for="event-type">Tipo</label>
                   <div class="selector-event">
-                    <input type="radio" id="presential" name="selector-event" value="1" >
+                    <input type="radio" id="presential" name="selector-event" value="presential">
                     <label for="presential" class="option">
                       
                       <svg class="option-icon" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +82,7 @@
                       Presencial
                       </label>
             
-                    <input type="radio" id="online" name="selector-event" value="2">
+                    <input type="radio" id="online" name="selector-event" value="online">
                     <label for="online" class="option">
                       
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,6 +113,38 @@
               placeholder="Escreva sobre os detalhes do evento"></textarea>
             </div>
             
+            <!--form-section-2-->
+
+            <fieldset class="personalization">
+              <legend>
+                <img class="img-sections" src="assets/icons/paintbrush-vertical.svg" alt="">
+                Personalização
+              </legend>
+
+              <div class="color-wrapper">
+                <label for="main-color">Cor principal</label>
+
+                <div class="select-color">
+                  <div class="color-style">
+                    <input type="radio" name="color" id="color1" value="color1">
+                  </div>
+  
+                  <div class="color-style">
+                    <input type="radio" name="color" id="color2" value="color2">
+                  </div>
+  
+                  <div class="color-style">
+                    <input type="radio" name="color" id="color3" value="color3">
+                  </div>
+  
+                  <div class="color-style">
+                    <input type="radio" name="color" id="color4" value="color4">
+                  </div>
+                </div>
+                
+             </div>           
+            </fieldset> 
+
           </forms>
         </div>
       </main>

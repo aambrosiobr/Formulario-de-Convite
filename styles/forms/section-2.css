@@ -1,0 +1,56 @@
+fieldset.personalization {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.img-sections {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+& .select-color {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+
+  margin-top: 1rem;
+}
+
+.select-color input[type="radio"] {
+  appearance: none;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 0.375rem solid var(--shape-button);
+}
+
+.color-style input[type="radio"] {
+  /* Assegure-se de que os inputs de rádio não estejam escondidos */
+  display: inline-block; /* ou block, se necessário */
+  opacity: 1; /* Certifique-se de que não estão invisíveis */
+  visibility: visible; /* Certifique-se de que estão visíveis */
+}
+
+& .color-style input[id="color1"] {
+  background-color: red;
+}
+
+& .color-style input[id="color2"] {
+  background-color: blue;
+}
+
+& .color-style input[id="color3"] {
+  background-color: green;
+}
+
+& .color-style input[id="color4"] {
+  background-color: yellow;
+}
