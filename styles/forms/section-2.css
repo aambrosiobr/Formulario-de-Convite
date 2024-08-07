@@ -42,6 +42,10 @@ fieldset.personalization {
   padding: 0;
 }
 
+.color-wrapper {
+margin-bottom: 1.75rem;
+}
+
 .color-style input[type="radio"] {
   display: inline-block;
   opacity: 1;
@@ -98,4 +102,12 @@ fieldset.personalization {
 
 & .color-style input[id="color11"] {
   background-color: var(--cyan);
+}
+
+.select-theme {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  border: 1px solid red;
 }
