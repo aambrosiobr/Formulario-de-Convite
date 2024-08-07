@@ -27,7 +27,6 @@ fieldset.information {
 
 label {
   display: block;
-  /* margin-bottom: 0.75rem; */
   font: var(--body-sm);
   color: var(--text-body);
 }

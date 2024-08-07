@@ -19,7 +19,14 @@ fieldset.personalization {
 & .select-color {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+  justify-items: center;
 
+  margin-top: 1rem;
+}
+.select-color {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+  justify-items: center;
   margin-top: 1rem;
 }
 
@@ -30,27 +37,65 @@ fieldset.personalization {
   height: 2.5rem;
   border-radius: 50%;
   border: 0.375rem solid var(--shape-button);
+
+  margin-block: 0;
+  padding: 0;
 }
 
 .color-style input[type="radio"] {
-  /* Assegure-se de que os inputs de rádio não estejam escondidos */
-  display: inline-block; /* ou block, se necessário */
-  opacity: 1; /* Certifique-se de que não estão invisíveis */
-  visibility: visible; /* Certifique-se de que estão visíveis */
+  display: inline-block;
+  opacity: 1;
+  visibility: visible;
+}
+
+& .color-style input[type="radio"]:hover {
+  border-color: var(--shape-hover);
+}
+
+& .color-style input[type="radio"]:checked {
+  outline: 2px solid var(--brand-light);
 }
 
 & .color-style input[id="color1"] {
-  background-color: red;
+  background-color: var(--brand-light);
 }
 
 & .color-style input[id="color2"] {
-  background-color: blue;
+  background-color: var(--navy);
 }
 
 & .color-style input[id="color3"] {
-  background-color: green;
+  background-color: var(--purple);
 }
 
 & .color-style input[id="color4"] {
-  background-color: yellow;
+  background-color: var(--fuschia);
+}
+
+& .color-style input[id="color5"] {
+  background-color: var(--pink);
+}
+
+& .color-style input[id="color6"] {
+  background-color: var(--danger);
+}
+
+& .color-style input[id="color7"] {
+  background-color: var(--orange);
+}
+
+& .color-style input[id="color8"] {
+  background-color: var(--yellow);
+}
+
+& .color-style input[id="color9"] {
+  background-color: var(--lime);
+}
+
+& .color-style input[id="color10"] {
+  background-color: var(--green);
+}
+
+& .color-style input[id="color11"] {
+  background-color: var(--cyan);
 }

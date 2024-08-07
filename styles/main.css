@@ -1,11 +1,11 @@
 main {
   padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+  height: 100vh;
   overflow: auto;
 }
 
 .main-brand {
   padding: 5rem 8.125rem 5rem 8.125rem;
-  height: 100vh;
   border-radius: 0.75rem;
   background-color: var(--shape-body);
 }
