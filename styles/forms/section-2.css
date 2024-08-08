@@ -43,7 +43,7 @@ fieldset.personalization {
 }
 
 .color-wrapper {
-margin-bottom: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .color-style input[type="radio"] {
@@ -104,10 +104,35 @@ margin-bottom: 1.75rem;
   background-color: var(--cyan);
 }
 
-.select-theme {
-  
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
 
+
+.theme-style {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Define 4 colunas com igual largura */
+  grid-template-rows: repeat(3, 1fr); /* Define 3 linhas com igual altura */
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.75rem;
   border: 1px solid red;
+}
+
+.select-theme {
+  width: 8.375rem;
+  height: 6.438rem;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+
+  background-color: var(--shape-button);
+
+  img-theme {
+    width: 7.875rem;
+    height: 4rem;
+
+    padding: 4rem;
+  }
+
+  label {
+    padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+    text-align: center;
+  }
 }
