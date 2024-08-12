@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 :root {
   /*Brand Colors*/
 
@@ -44,7 +43,7 @@
   /*Text Colors*/
 
   --text-body: #c8cdd0;
-  --text-heading: #F9F9F9;
+  --text-heading: #f9f9f9;
 
   /*Tipografia*/
 
@@ -60,4 +59,3 @@
   --body-sm: 500 0.875rem/100% var(--font-family-os);
   --body-xs: 500 0.75rem/100% var(--font-family-os);
 }
-

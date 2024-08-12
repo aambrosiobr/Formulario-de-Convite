@@ -23,15 +23,10 @@ fieldset.personalization {
 
   margin-top: 1rem;
 }
-.select-color {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
-  justify-items: center;
-  margin-top: 1rem;
-}
 
-.select-color input[type="radio"] {
+& .select-color input[type="radio"] {
   appearance: none;
+  cursor: pointer;
 
   width: 2.5rem;
   height: 2.5rem;
@@ -104,35 +99,168 @@ fieldset.personalization {
   background-color: var(--cyan);
 }
 
+.theme-wrapper {
+  font: var(--body-sm);
+  color: var(--text-body);
 
+  & .theme-styles {
+    /* max-width: 35rem; */
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
+    gap: 0.5rem;
 
-.theme-style {
+    margin-bottom: 1.75rem;
+
+    & .theme {
+      position: relative;
+      display: grid;
+      justify-items: center;
+      width: 8.475rem;
+      background-color: var(--shape-button);
+      border-radius: 0.5rem;
+      border: 1px solid var(--shape-button);
+      padding: 0.25rem;
+
+      & img {
+        margin-bottom: 0.5rem;
+        width: 7.875rem;
+        height: 4rem;
+      }
+
+      & label {
+        margin-bottom: 0.25rem;
+
+        font: var(--body-sm);
+        color: var(--input-placeholder);
+      }
+
+      & input,
+      input:hover,
+      input:focus {
+        all: unset;
+        position: absolute;
+        inset: 0;
+      }
+
+      & input[type="radio"]:checked {
+        border: 1px solid var(--brand-light);
+        border-radius: 0.5rem;
+      }
+
+      &:hover {
+        background-color: var(--shape-hover);
+
+        label {
+          font: var(--body-sm);
+          color: var(--text-heading);
+        }
+      }
+    }
+  }
+}
+
+.titles-switch {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Define 4 colunas com igual largura */
-  grid-template-rows: repeat(3, 1fr); /* Define 3 linhas com igual altura */
-  gap: 0.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1.75rem;
-  border: 1px solid red;
+  position: relative;
+
+  grid-template-columns: 15rem 1fr;
+  align-items: center;
 }
 
-.select-theme {
-  width: 8.375rem;
-  height: 6.438rem;
-  border-radius: 0.5rem;
-  padding: 0.25rem;
+.switch-wrapper {
+  display: grid;
+  position: relative;
 
-  background-color: var(--shape-button);
+  grid-template-columns: 4rem 11rem 7.438rem 14.813rem;
+  align-items: center;
+  
+  & input[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: 1rem;
 
-  img-theme {
-    width: 7.875rem;
-    height: 4rem;
-
-    padding: 4rem;
+    cursor: pointer;
   }
 
-  label {
-    padding: 0.5rem 0.25rem 0.5rem 0.25rem;
-    text-align: center;
+  & button {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    transform: translateY(50%);
+
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--input-stroke);
+    border-radius: 0.75rem;
+    border: none;
+
+    top: 0.3rem;
+    left: 0.3rem;
+    transition: 0.4s;
   }
+  
+  & input[type="checkbox"]:checked {
+    background-color: var(--brand-light);
+
+    & + button {
+      top: 0.3rem;
+      left: 2.2rem;
+      transition: 0.3s;
+
+      background-color: var(--brand-light);
+      background-color: var(--text-heading);
+    }
+  }
+
+  
+  span::before {
+    content: 'Escuro';
+    position: relative;
+    left: 0.75rem;
+    
+    
+  }
+  
+  input[type="checkbox"]:checked + button + span::before {
+    content: 'Claro';
+    position: relative;
+    left: 0.75rem;
+  }
+  
+  #file-upload {
+    display: none;
+    
+  }
+
+/* Estilo personalizado para o rótulo que simula o botão de upload */
+  .custom-file-upload {
+    display: flex;
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 0.656rem 0.75rem;
+   
+    background-color: var(--shape-button);
+    border: none;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+    cursor: pointer;
+    
+  }
+
+  p {
+    
+    font: var(--body-sm);
+    color: var(--input-placeholder);
+    margin-block: 0.813rem;
+    margin-left: 0.75rem;
+  }
+
+
 }
+
+ 

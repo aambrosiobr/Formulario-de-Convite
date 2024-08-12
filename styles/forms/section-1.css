@@ -117,7 +117,8 @@ input[type="radio"] {
   display: none;
 }
 
-& .option:hover {
+& .option:hover,
+  .option:focus {
   font: var(--body-sm);
   color: var(--text-heading);
 
