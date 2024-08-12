@@ -267,117 +267,105 @@
               </div>
 
               <div class="theme-wrapper">
-                <label for="event-event">Tema do evento</label>
-
-                <div class="theme-style">
-                  <div class="select-theme">
-                    <img
-                      class="img-theme"
-                      src="assets/images/Image.svg"
-                      alt="Imagem de um bolo de aniversário"
-                    />
+                <label for="theme"> Tema do evento</label>
+  
+                <div class="theme-styles">
+                  <div class="theme">
+                    <input type="radio" name="theme" id="birth">
+                    <img src="./assets/images/Image.svg" alt="imagem de um bolo de aniversário">
                     <label>Aniversário</label>
                   </div>
-
-                  <div class="select-theme">
-                    <img
-                      class="img-theme"
-                      src="assets/images/Image-1.svg"
-                      alt="Imagem de acessórios para festa"
-                    />
+  
+                  <div class="theme">
+                    <input type="radio" name="theme" id="children">
+                    <img src="./assets/images/Image-1.svg" alt="imagem de acessórios infantis">
                     <label>Infantil</label>
                   </div>
-
-                  <div class="select-theme">
-                    <img
-                      class="img-theme"
-                      src="assets/images/Image-2.svg"
-                      alt="Imagem de um chapéu de formatura"
-                    />
+  
+                  <div class="theme">
+                    <input type="radio" name="theme" id="graduation">
+                    <img src="./assets/images/Image-2.svg" alt="imagem de chapeu de formatura">
                     <label>Formatura</label>
                   </div>
-
-                  <div class="select-theme">
-                    <img
-                      class="img-theme"
-                      src="assets/images/Image-3.svg"
-                      alt="Imagem de par de alianças"
-                    />
+  
+                  <div class="theme">
+                    <input type="radio" name="theme" id="marriage">
+                    <img src="./assets/images/Image-3.svg" alt="imagem de um par de alianças de casamento">
                     <label>Casamento</label>
                   </div>
-                  
-                  <div class="select-theme">
-                    <img
-                      class="img-theme"
-                      src="assets/images/Image-4.svg"
-                      alt="Imagem de folhor ao lado uma fralda"
-                    />
+
+                  <div class="theme">
+                    <input type="radio" name="theme" id="baby-shower">
+                    <img src="./assets/images/Image-4.svg" alt="imagem de um uma folhor com uma fralda">
                     <label>Chá de bebê</label>
                   </div>
 
-                  <div class="select-theme">
-                    <img
-                      class="img-theme"
-                      src="assets/images/Image-5.svg"
-                      alt="Imagem com fundo de uma cozinha"
-                    />
+                  <div class="theme">
+                    <input type="radio" name="theme" id="bridal-shower">
+                    <img src="./assets/images/Image-5.svg" alt="imagem de um uma cozinha ao fundo">
                     <label>Chá de panela</label>
                   </div>
 
-                  <div class="select-theme">
-                    <img
-                      class="img-theme"
-                      src="assets/images/Image-6.svg"
-                      alt="Imagem de confetes de carnaval"
-                    />
+                  <div class="theme">
+                    <input type="radio" name="theme" id="carnival">
+                    <img src="./assets/images/Image-6.svg" alt="imagem de um confetes de carnaval">
                     <label>Carnaval</label>
                   </div>
 
-                  <div class="select-theme">
-                    <img
-                      class="img-theme"
-                      src="assets/images/Image-7.svg"
-                      alt="Imagem de um ovo de pascoa enfeitado"
-                    />
+                  <div class="theme">
+                    <input type="radio" name="theme" id="easter">
+                    <img src="./assets/images/Image-7.svg" alt="imagem de um ovo de páscoa">
                     <label>Páscoa</label>
                   </div>
 
-                  <div class="select-theme">
-                    <img
-                      class="img-theme"
-                      src="assets/images/Image-8.svg"
-                      alt="Imagem de um ovo de pascoa enfeitado"
-                    />
+                  <div class="theme">
+                    <input type="radio" name="theme" id="saint-john">
+                    <img src="./assets/images/Image-8.svg" alt="imagem de um ovo de páscoa">
                     <label>São João</label>
                   </div>
 
-                  <div class="select-theme">
-                    <img
-                      class="img-theme"
-                      src="assets/images/Image-9.svg"
-                      alt="Imagem de bandeirinhas de são joão"
-                    />
+                  <div class="theme">
+                    <input type="radio" name="theme" id="halloween">
+                    <img src="./assets/images/Image-9.svg" alt="imagem de aboboras de halloween">
                     <label>Halloween</label>
                   </div>
 
-                  <div class="select-theme">
-                    <img
-                      class="img-theme"
-                      src="assets/images/Image-10.svg"
-                      alt="Imagem de aboras de Halloween"
-                    />
+                  <div class="theme">
+                    <input type="radio" name="theme" id="christmas">
+                    <img src="./assets/images/Image-10.svg" alt="imagem de aboboras de presentes de natal">
+                    <label>Natal</label>
+                  </div>
+                  
+                  <div class="theme">
+                    <input type="radio" name="theme" id="other">
+                    <img src="./assets/images/Image-11.svg" alt="imagem de pessoas brindando">
                     <label>Outro</label>
                   </div>
 
-                  <div class="select-theme">
-                    <img
-                      class="img-theme"
-                      src="assets/images/Image-11.svg"
-                      alt="Imagem de varias pessoas brindando"
-                    />
-                    <label>Páscoa</label>
+                </div>
+                                 
+                  <div class="titles-switch">
+                    <label>Estilo</label>
+                    <label>Foto de capa</label>
+                  </div>
+                  
+                  <div class="switch-wrapper">
+                      <input type="checkbox" class="switch-button">
+                      <button></button>
+                    
+                      <span for="switch-button"></span>
+                  
+                    <input id="file-upload" type="file" />
+                    <label for="file-upload" class="custom-file-upload">
+                      <img src="assets/icons/upload.svg" alt="Ícone de upload">
+                      Selecionar
+                    </label>
+                    <p>Nenhum arquivo selecionado</p>
+
                   </div>
 
+                  
+                  
                 </div>
               </div>
             </fieldset>
