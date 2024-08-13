@@ -15,7 +15,12 @@ fieldset.contact {
 
 .contact-wrapper {
     margin-bottom: 1rem;
+    
   }
+
+input.contacts {
+  margin-bottom: 0;
+}
 
 input.input-required {
   margin-bottom: 0.5rem;

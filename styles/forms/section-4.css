@@ -1,0 +1,118 @@
+.division {
+border-top: 0.063rem solid var(--input-stroke);
+margin-bottom: 2.5rem;
+}
+
+.terms {
+  border: none;
+}
+.terms-wrapper {
+  display: flex;
+  border: none;
+  
+}
+
+.terms-wrapper label {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  padding-left: 2rem;
+ 
+  line-height: 2rem;
+}
+
+.terms-wrapper input {
+  display: none;
+}
+
+.terms-wrapper input + label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid var(--input-stroke);
+  background-color: var(--input-base);
+  border-radius: .25rem;
+  margin-right: .75rem;
+  
+  cursor: pointer;
+}
+
+.terms-wrapper input:checked + label::before {
+  content: "";
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url(../../assets/icons/check.svg);
+  background-size: 1.25rem 1.25rem;
+  background-repeat: no-repeat;
+  border: 1px solid var(--brand-light);
+  border-radius: .25rem;
+  
+}
+
+.button {
+  display: flex;
+  gap: .75rem;
+  height: 3rem;
+  padding: 0 1.25rem;
+  background-color: var(--brand-dark);
+  border-radius: .25rem;
+  font: var(--body-md);
+  color: var(--text-heading);
+  border: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+a {
+  font: var(--body-sm);
+  color: var(--brand-light);
+}
+
+
+.button-event {
+  display: flex;
+  justify-content: flex-end; /* Alinha o botão à direita */
+
+  margin-top: 3rem;
+}
+
+
+
+ .btn {
+  
+  background-color: var(--brand-dark);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s, transform 0.2s;
+
+  font: var(--body-md);
+  color: var(--text-heading);
+}
+
+.icon {
+  width: 18px; /* Tamanho do ícone SVG */
+  height: 18px;
+  fill: #fff; /* Cor do ícone */
+}
+
+.btn:hover {
+  font: var(--body-md);
+  color: var(--text-heading);
+}
+
+.btn:active {
+  transform: scale(0.98); /* Efeito de pressão ao clicar */
+}
