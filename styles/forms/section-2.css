@@ -104,14 +104,12 @@ fieldset.personalization {
   color: var(--text-body);
 
   & .theme-styles {
-    /* max-width: 35rem; */
-    margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
     gap: 0.5rem;
 
-    margin-bottom: 1.75rem;
-
+    margin-block: 1rem 1.75rem;    
+  
     & .theme {
       position: relative;
       display: grid;
@@ -162,9 +160,9 @@ fieldset.personalization {
 
 .titles-switch {
   display: grid;
-  position: relative;
+  /* position: relative; */
 
-  grid-template-columns: 15rem 1fr;
+  grid-template-columns: 14.1rem 1fr;
   align-items: center;
 }
 
@@ -172,7 +170,7 @@ fieldset.personalization {
   display: grid;
   position: relative;
 
-  grid-template-columns: 4rem 11rem 7.438rem 14.813rem;
+  grid-template-columns: 4rem 10rem 7.438rem 13.5rem;
   align-items: center;
   
   & input[type="checkbox"] {

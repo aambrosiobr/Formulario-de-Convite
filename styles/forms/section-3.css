@@ -1,0 +1,41 @@
+fieldset.contact {
+  display: flex;
+  flex-direction: column;
+  border: none;
+
+  margin-block: 3rem 3rem;
+}
+
+.flex-wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+
+}
+
+.contact-wrapper {
+    margin-bottom: 1rem;
+  }
+
+input.input-required {
+  margin-bottom: 0.5rem;
+
+  &:invalid {
+    border: 0.063rem solid var(--danger);
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+}
+
+span.span-error {
+  font: var(--body-xs);
+  color: var(--danger);
+}
